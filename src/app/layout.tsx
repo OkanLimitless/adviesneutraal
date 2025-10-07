@@ -14,30 +14,30 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Adviesneutraal | Onafhankelijk financieel advies",
-    template: "%s | Adviesneutraal",
+    default: "Adviesneutraal Klantenservice Energie",
+    template: "%s | Adviesneutraal Energie",
   },
   description:
-    "Adviesneutraal biedt onafhankelijk financieel advies voor professionals, ondernemers en gezinnen die toekomstbestendige keuzes willen maken.",
+    "Bel 085 087 0276 en sta binnen 20 seconden in contact met de onafhankelijke energie-klantenservice van Adviesneutraal.",
   keywords: [
-    "financieel advies",
-    "onafhankelijk advies",
-    "hypotheekadvies",
-    "financiële planning",
-    "adviesneutraal",
+    "energie klantenservice",
+    "energie vragen",
+    "energie contract wijzigen",
+    "storing energie",
+    "adviesneutraal klantenservice",
   ],
   openGraph: {
-    title: "Adviesneutraal | Onafhankelijk financieel advies",
+    title: "Adviesneutraal Klantenservice Energie",
     description:
-      "Persoonlijk financieel advies zonder provisies. Heldere strategie, deskundige begeleiding en blijvende betrokkenheid.",
+      "Binnen 20 seconden verbonden met een energie-expert. Bel 085 087 0276 voor factuurvragen, contractwijzigingen of storingen.",
     type: "website",
     locale: "nl_NL",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adviesneutraal | Onafhankelijk financieel advies",
+    title: "Adviesneutraal Klantenservice Energie",
     description:
-      "Maak financiële keuzes met vertrouwen dankzij onafhankelijk advies en heldere taal.",
+      "Direct hulp bij al je energiezaken via 085 087 0276 – zonder wachttijd.",
   },
 };
 

@@ -1,6 +1,6 @@
-# Adviesneutraal Landing Page
+# Adviesneutraal Klantenservice Energie
 
-Marketing site for Adviesneutraal, gebouwd met Next.js (App Router) en Tailwind CSS. De site is opgezet voor een eerste Vercel-deploy en vormt een basis voor toekomstige contentuitbreiding.
+Single-page website voor de energie-klantenservice van Adviesneutraal. De pagina focust op telefonische conversies, met een mobiele sticky call-to-action, gebouwd met Next.js (App Router) en Tailwind CSS.
 
 ## Getting Started
 
@@ -20,9 +20,9 @@ Open daarna [http://localhost:3000](http://localhost:3000) om de landing page te
 
 Belangrijke bestanden:
 
-- `src/app/page.tsx` – hoofdpagina met copy, secties en call to action
-- `src/app/layout.tsx` – globale layout en metadata
-- `src/app/globals.css` – Tailwind imports en themakleuren
+- `src/app/page.tsx` – hoofdpagina met hero, belredenen en sticky CTA
+- `src/app/layout.tsx` – globale layout en metadata voor energie-klantenservice
+- `src/app/globals.css` – Tailwind imports, kleuren en fontinstellingen
 
 ## Beschikbare scripts
 
@@ -40,6 +40,6 @@ Belangrijke bestanden:
 
 ## Verdere stappen
 
-- Vul echte contactgegevens in bij de CTA in `src/app/page.tsx`.
-- Voeg waar nodig extra secties of contentblokken toe (bijvoorbeeld testimonials of blogposts).
-- Voeg favicon en social share-afbeeldingen toe in de map `public`.
+- Vervang de voorbeeld e-mail (`energie@adviesneutraal.nl`) door het juiste adres.
+- Voeg extra bewijsvoering toe (bijv. reviews of keurmerken) in `src/app/page.tsx`.
+- Plaats favicon en social share-afbeeldingen in `public/` voor een complete branding.

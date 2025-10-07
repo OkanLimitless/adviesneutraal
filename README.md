@@ -26,7 +26,7 @@ Belangrijke bestanden:
 
 ## Beschikbare scripts
 
-- `npm run dev` – development server (standaard met Turbopack)
+- `npm run dev` – development server
 - `npm run build` – production build, klaar voor Vercel
 - `npm run start` – start de gecompileerde app
 - `npm run lint` – voert ESLint uit

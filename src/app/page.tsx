@@ -1,7 +1,28 @@
+"use client";
+
+import type { MouseEvent } from "react";
+
+declare global {
+  interface Window {
+    gtag_report_conversion?: (url?: string) => boolean;
+  }
+}
+
 const phoneDisplay = "085 087 0276";
 const phoneHref = "tel:+31850870276";
 const emailAddress = "energie@adviesneutraal.nl";
 const emailHref = `mailto:${emailAddress}`;
+
+const handleCallClick = (event: MouseEvent<HTMLAnchorElement>) => {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  if (typeof window.gtag_report_conversion === "function") {
+    event.preventDefault();
+    window.gtag_report_conversion(phoneHref);
+  }
+};
 
 const benefits = [
   {
@@ -72,6 +93,7 @@ export default function Home() {
             <a
               className="hidden rounded-full bg-sky-600 px-4 py-2 font-medium text-white shadow-sm transition hover:bg-sky-700 sm:inline-flex sm:items-center sm:justify-center"
               href={phoneHref}
+              onClick={handleCallClick}
             >
               Bel nu
             </a>
@@ -104,6 +126,7 @@ export default function Home() {
             <a
               className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-500/30 transition hover:bg-sky-700 sm:w-auto"
               href={phoneHref}
+              onClick={handleCallClick}
             >
               Bel nu – direct verbonden
             </a>
@@ -169,6 +192,7 @@ export default function Home() {
             <a
               className="inline-flex items-center justify-center gap-2 rounded-full bg-orange-500 px-6 py-3 text-sm font-semibold text-white shadow transition hover:bg-orange-600"
               href={phoneHref}
+              onClick={handleCallClick}
             >
               Bel nu – direct verbonden
             </a>
@@ -210,6 +234,7 @@ export default function Home() {
               <a
                 className="inline-flex w-full items-center justify-center rounded-full bg-orange-500 px-6 py-3 text-sm font-semibold text-white shadow transition hover:bg-orange-600 sm:w-auto"
                 href={phoneHref}
+                onClick={handleCallClick}
               >
                 Bel {phoneDisplay}
               </a>
@@ -250,6 +275,7 @@ export default function Home() {
           <a
             className="inline-flex items-center justify-center rounded-full bg-orange-500 px-4 py-3 text-sm font-semibold text-white shadow transition hover:bg-orange-600"
             href={phoneHref}
+            onClick={handleCallClick}
           >
             Bel nu – direct verbonden
           </a>
